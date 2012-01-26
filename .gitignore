@@ -9,5 +9,5 @@
 *.perspective
 *.perspectivev3
 *.xcworkspace
-xcuserdata
+xcuserdata/
 dsa_priv.pem
