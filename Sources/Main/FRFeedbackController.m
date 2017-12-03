@@ -650,13 +650,13 @@
 
 - (void) showWindow:(id)sender
 {
-    if (type == FR_FEEDBACK) {
+    if ([type isEqualToString:FR_FEEDBACK]) {
 		[messageLabel setStringValue:FRLocalizedString(@"Feedback comment label", nil)];
     } else {
         [messageLabel setStringValue:FRLocalizedString(@"Comments:", nil)];
     }
 
-    if (type == FR_EXCEPTION) {
+    if ([type isEqualToString:FR_EXCEPTION]) {
         if (++exceptionCount > 1) {
             [terminateButton setHidden:NO];
         }
